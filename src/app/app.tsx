@@ -9,7 +9,7 @@ import logo from './assets/svg/logo.svg';
 
 const textFontSizes = [16, 18, 24, 30];
 
-function App(): JSX.Element {
+const App = (): JSX.Element => {
   const [count, setCount] = useState(0);
 
   return (
@@ -75,6 +75,6 @@ function App(): JSX.Element {
       <ThemeToggleButton pos="fixed" bottom="2" right="2" />
     </Box>
   );
-}
+};
 
 export default App;
