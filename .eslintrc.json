@@ -37,6 +37,7 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": "off",
     "linebreak-style": "off",
     "eol-last": "off",
     "max-len": ["warn", { "code": 80 }],

@@ -4,10 +4,8 @@ import styled from '@emotion/styled';
 
 import transientOptions from '../../app/utils/general';
 
-// PROP TYPES
 type ThemeToggleButtonProps = Omit<IconButtonProps, 'aria-label'>;
 
-// CONSTS and LETS
 const iconSize = 20;
 
 const RoundButton = styled(IconButton, transientOptions)`
@@ -19,7 +17,7 @@ const RoundButton = styled(IconButton, transientOptions)`
   }
 `;
 
-function ThemeToggleButton(props: ThemeToggleButtonProps): JSX.Element {
+const ThemeToggleButton = (props: ThemeToggleButtonProps): JSX.Element => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
@@ -32,6 +30,6 @@ function ThemeToggleButton(props: ThemeToggleButtonProps): JSX.Element {
       {...props}
     />
   );
-}
+};
 
 export default ThemeToggleButton;
